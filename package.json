@@ -1,11 +1,14 @@
 {
-  "name": "provajs2",
+  "name": "provajs",
   "version": "1.0.0",
   "description": "prima prova con node.js",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
