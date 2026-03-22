@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.get('/', (req, res) => {
   // Dati dinamici (es. da database)
-  const data = { title: 'Pagina SSR', content: 'Contenuto renderizzato sul server' };
+  const data = { title: 'Pagina SSR', content: 'Contenuto della pagina sul server' };
 
   // Rendering lato server: il server compila l'HTML
   const html = `
@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
       <body>
         <h1>${data.title}</h1>
         <p>${data.content}</p>
+        <p>Ciao Mondo Render!!</p>
       </body>
     </html>
   `;
