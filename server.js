@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 const client = new Client({
   //connectionString: process.env.DATABASE_URL,
-  connectionString: "postgresql://neondb_owner:npg_S8wDvg1lcqfM@ep-damp-voice-agmvqylt-pooler.c-2.eu-central-1.aws.neon.tech/ese01?sslmode=require&channel_binding=require",
+  connectionString: process.env.DATABASE_URL,
   ssl: true, // Necessario per Neon
 });
 await client.connect();
