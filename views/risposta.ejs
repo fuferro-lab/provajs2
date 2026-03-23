@@ -1,0 +1,14 @@
+<html>
+      <head><title><%= dat.title %></title></head>
+      <body>
+        <h1><%= dat.title %></h1>
+        <p><%= dat.content %></p>
+        <p>Ciao Mondo Render!!</p>
+         <h1>Dati dal Database</h1>
+         <ul>
+         <% dati.forEach(item => { %>
+          <li><%= item.nome_utente %></li>
+         <% }); %>
+         </ul>
+      </body>
+    </html>
